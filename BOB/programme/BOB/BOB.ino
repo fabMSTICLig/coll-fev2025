@@ -2,6 +2,8 @@
 #include <Servo.h>
 #include <Adafruit_NeoPixel.h>
 #include <Ultrasonic.h>
+#include <LiquidCrystal_PCF8574.h>
+
 // ^ include des 4 library:
 // - infra rouge (IRremote.h) 
 // - servo moteurs (Servo.h)
@@ -48,12 +50,34 @@
 Servo myservo1;
 Servo myservo2;
 
+//Variable pour manipuler l'ecran LCD
+LiquidCrystal_PCF8574 lcd(0x27); // set the LCD address to 0x27 for a 20 chars and 4 line display
+
 // variable "ultrasonic" pour manipuler le capteur à ultrason
 Ultrasonic ultrasonic(US_PIN);
 
 // variables "strip" pour manipuler le ruban de leds
 Adafruit_NeoPixel strip1(LED_COUNT, LED_PIN_1, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel strip2(LED_COUNT, LED_PIN_2, NEO_GRB + NEO_KHZ800);
+
+void init_lcd()
+{
+    int error = 0;
+    Wire.begin();
+    Wire.beginTransmission(0x27);
+    error = Wire.endTransmission();
+
+    if (error == 0) {
+      Serial.println("LCD found.");
+      lcd.begin(20, 4); // initialize the lcd
+
+  } else {
+    Serial.print("Error: ");
+    Serial.print(error);
+    Serial.println(": LCD not found.");
+  }
+  return (error);
+}
 
 void setup()
 {
@@ -82,6 +106,17 @@ void setup()
     myservo2.attach(SERVO2_PIN);
     myservo1.write(90);
     myservo2.write(90);
+
+    // initialisation ecran LCD (avec la fonction definie plus haut)
+    init_lcd();
+
+    // lcd.begin(16, 2);
+    // lcd.setRGB(255, 255, 255);
+
+    // delay(500);
+      //on efface l'écran
+    lcd.clear();
+    lcd.setBacklight(255);
 
     //////////////////// FIN INITIALISATION ////////////////////
 
@@ -159,9 +194,16 @@ long capteur_ultrason()
     return (RangeInCentimeters);
 }
 
+// Fonction permettant d'effacer l'ecran LCD et d'y afficher une phrase
+void afficher_une_phrase_lcd(char *str)
+{
+  lcd.clear();
+  lcd.print(str);
+}
+
 void loop()
 {
-    // si obstacle détécté
+        // si obstacle détécté
     if (capteur_ultrason() < 10)
     {
       set_led_color(&strip1, 255,0,0);
@@ -199,31 +241,36 @@ void loop()
         else if (IrReceiver.decodedIRData.command == TOUCHE_1)
         {
             Serial.println("touche: TOUCHE_1");
-
+            afficher_une_phrase_lcd("Salut je suis BOB!");
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_2)
         {
             Serial.println("touche: TOUCHE_2");
+            afficher_une_phrase_lcd("BOOOOOB!!!!!");
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_3)
         {
             Serial.println("touche: TOUCHE_3");
+            afficher_une_phrase_lcd("J'ai faim!!");
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_4)
         {
             Serial.println("touche: TOUCHE_4");
+            afficher_une_phrase_lcd("(bruit de robot)");
         
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_5)
         {
             Serial.println("touche: TOUCHE_5");
+            afficher_une_phrase_lcd("Fabrique au FabLab");
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_6)
         {
             Serial.println("touche: TOUCHE_6");
+            afficher_une_phrase_lcd("A l'aide!!!         J'ai peeuuur!!");
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_7)
@@ -264,6 +311,7 @@ void loop()
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_OK)
         {
+          lcd.clear();
             Serial.println("touche: TOUCHE_OK");
         }
         IrReceiver.resume();
