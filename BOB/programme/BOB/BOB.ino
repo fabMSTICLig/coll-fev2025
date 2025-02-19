@@ -4,11 +4,12 @@
 #include <Ultrasonic.h>
 #include <LiquidCrystal_PCF8574.h>
 
-// ^ include des 4 library:
+// ^ include des 5 library:
 // - infra rouge (IRremote.h) 
 // - servo moteurs (Servo.h)
 // - Ruban de leds (Adafruit_NeoPixel.h)
 // - Capteur ultrason (Ultrasonic.h)
+// - ecran LCD (LiquidCrystal_PCF8574)
 
 // DEFINITION PIN DE CONNEXION DU CAPTEUR INFRA ROUGE
 #define IR_PIN      3
@@ -51,7 +52,7 @@ Servo myservo1;
 Servo myservo2;
 
 //Variable pour manipuler l'ecran LCD
-LiquidCrystal_PCF8574 lcd(0x27); // set the LCD address to 0x27 for a 20 chars and 4 line display
+LiquidCrystal_PCF8574 lcd(0x27); // définie l'adresse I2C de l'ecran LCD (0x27) 20 caracteres sur 4 lignes
 
 // variable "ultrasonic" pour manipuler le capteur à ultrason
 Ultrasonic ultrasonic(US_PIN);
@@ -69,14 +70,15 @@ void init_lcd()
 
     if (error == 0) {
       Serial.println("LCD found.");
-      lcd.begin(20, 4); // initialize the lcd
+      lcd.begin(20, 4);
 
   } else {
     Serial.print("Error: ");
     Serial.print(error);
     Serial.println(": LCD not found.");
   }
-  return (error);
+  lcd.clear();
+  lcd.setBacklight(255);
 }
 
 void setup()
@@ -109,14 +111,6 @@ void setup()
 
     // initialisation ecran LCD (avec la fonction definie plus haut)
     init_lcd();
-
-    // lcd.begin(16, 2);
-    // lcd.setRGB(255, 255, 255);
-
-    // delay(500);
-      //on efface l'écran
-    lcd.clear();
-    lcd.setBacklight(255);
 
     //////////////////// FIN INITIALISATION ////////////////////
 
