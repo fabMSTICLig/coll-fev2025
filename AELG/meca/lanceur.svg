@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="293.00mm"
+   viewBox="0.0 0.0 57.50 293.00"
+   width="57.50mm"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="lanceur.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.8329513"
+     inkscape:cx="362.56621"
+     inkscape:cy="965.84278"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <!--
+ClosedBox - Fully closed box
+
+
+This box is more of a building block than a finished item.
+Use a vector graphics program (like Inkscape) to add holes or adjust the base
+plate.
+
+See BasedBox for variant with a base.
+
+
+Created with Boxes.py (https://boxes.hackerspace-bamberg.de/)
+Creation date: 2025-02-19 12:04:18
+Command line (remove spaces between dashes): boxes ClosedBox - -x=12 - -y=12 - -h=120 - -outside=0 - -labels=0 - -reference=0 - -burn=0
+Url: https://boxes.hackerspace-bamberg.de/ClosedBox?FingerJoint_style=rectangular&FingerJoint_surroundingspaces=2.0&FingerJoint_bottom_lip=0.0&FingerJoint_edge_width=1.0&FingerJoint_extra_length=0.0&FingerJoint_finger=2.0&FingerJoint_play=0.0&FingerJoint_space=2.0&FingerJoint_width=1.0&x=12&y=12&h=120&outside=0&thickness=3.0&format=svg&tabs=0.0&qr_code=0&debug=0&labels=0&reference=0&inner_corners=loop&burn=0&language=fr&render=1
+Url short: https://boxes.hackerspace-bamberg.de/ClosedBox?x=12&y=12&h=120&outside=0&labels=0&reference=0&burn=0
+SettingsUrl: https://boxes.hackerspace-bamberg.de/ClosedBox?FingerJoint_style=rectangular&FingerJoint_surroundingspaces=2.0&FingerJoint_bottom_lip=0.0&FingerJoint_edge_width=1.0&FingerJoint_extra_length=0.0&FingerJoint_finger=2.0&FingerJoint_play=0.0&FingerJoint_space=2.0&FingerJoint_width=1.0&x=12&y=12&h=120&outside=0&thickness=3.0&format=svg&tabs=0.0&qr_code=0&debug=0&labels=0&reference=0&inner_corners=loop&burn=0&language=fr
+SettingsUrl short: https://boxes.hackerspace-bamberg.de/ClosedBox?x=12&y=12&h=120&outside=0&labels=0&reference=0&burn=0
+-->
+  <title
+     id="title1">ClosedBox</title>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:title>Box - ClosedBox</dc:title>
+        <dc:date>2025-02-19 12:04:18</dc:date>
+        <dc:source>https://boxes.hackerspace-bamberg.de/ClosedBox?FingerJoint_style=rectangular&amp;FingerJoint_surroundingspaces=2.0&amp;FingerJoint_bottom_lip=0.0&amp;FingerJoint_edge_width=1.0&amp;FingerJoint_extra_length=0.0&amp;FingerJoint_finger=2.0&amp;FingerJoint_play=0.0&amp;FingerJoint_space=2.0&amp;FingerJoint_width=1.0&amp;x=12&amp;y=12&amp;h=120&amp;outside=0&amp;thickness=3.0&amp;format=svg&amp;tabs=0.0&amp;qr_code=0&amp;debug=0&amp;labels=0&amp;reference=0&amp;inner_corners=loop&amp;burn=0&amp;language=fr&amp;render=1</dc:source>
+        <dc:source>https://boxes.hackerspace-bamberg.de/ClosedBox?x=12&amp;y=12&amp;h=120&amp;outside=0&amp;labels=0&amp;reference=0&amp;burn=0</dc:source>
+        <dc:description>Fully closed box&#10;&#10;This box is more of a building block than a finished item.&#10;Use a vector graphics program (like Inkscape) to add holes or adjust the base&#10;plate.&#10;&#10;See BasedBox for variant with a base.&#10;&#10;Created with Boxes.py (https://boxes.hackerspace-bamberg.de/)&#10;Command line: boxes ClosedBox --FingerJoint_style=rectangular --FingerJoint_surroundingspaces=2.0 --FingerJoint_bottom_lip=0.0 --FingerJoint_edge_width=1.0 --FingerJoint_extra_length=0.0 --FingerJoint_finger=2.0 --FingerJoint_play=0.0 --FingerJoint_space=2.0 --FingerJoint_width=1.0 --x=12 --y=12 --h=120 --outside=0 --thickness=3.0 --format=svg --tabs=0.0 --qr_code=0 --debug=0 --labels=0 --reference=0 --inner_corners=loop --burn=0&#10;Command line short: boxes ClosedBox --x=12 --y=12 --h=120 --outside=0 --labels=0 --reference=0 --burn=0&#10;Url: https://boxes.hackerspace-bamberg.de/ClosedBox?FingerJoint_style=rectangular&amp;FingerJoint_surroundingspaces=2.0&amp;FingerJoint_bottom_lip=0.0&amp;FingerJoint_edge_width=1.0&amp;FingerJoint_extra_length=0.0&amp;FingerJoint_finger=2.0&amp;FingerJoint_play=0.0&amp;FingerJoint_space=2.0&amp;FingerJoint_width=1.0&amp;x=12&amp;y=12&amp;h=120&amp;outside=0&amp;thickness=3.0&amp;format=svg&amp;tabs=0.0&amp;qr_code=0&amp;debug=0&amp;labels=0&amp;reference=0&amp;inner_corners=loop&amp;burn=0&amp;language=fr&amp;render=1&#10;Url short: https://boxes.hackerspace-bamberg.de/ClosedBox?x=12&amp;y=12&amp;h=120&amp;outside=0&amp;labels=0&amp;reference=0&amp;burn=0&#10;SettingsUrl: https://boxes.hackerspace-bamberg.de/ClosedBox?FingerJoint_style=rectangular&amp;FingerJoint_surroundingspaces=2.0&amp;FingerJoint_bottom_lip=0.0&amp;FingerJoint_edge_width=1.0&amp;FingerJoint_extra_length=0.0&amp;FingerJoint_finger=2.0&amp;FingerJoint_play=0.0&amp;FingerJoint_space=2.0&amp;FingerJoint_width=1.0&amp;x=12&amp;y=12&amp;h=120&amp;outside=0&amp;thickness=3.0&amp;format=svg&amp;tabs=0.0&amp;qr_code=0&amp;debug=0&amp;labels=0&amp;reference=0&amp;inner_corners=loop&amp;burn=0&amp;language=fr&#10;SettingsUrl short: https://boxes.hackerspace-bamberg.de/ClosedBox?x=12&amp;y=12&amp;h=120&amp;outside=0&amp;labels=0&amp;reference=0&amp;burn=0&#10;</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g9">
+    <path
+       d="m -98,148.889 v 3 7.99976 3 h 3 9 v 3 h 6 v -3 h 6 6 6 6 6 6 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6.0000005 v -3 h 6 v 3 h 6 v -3 H 10 v 3 h 6 v -3 h 9 3 v -3 -7.99976 -3 h -3 -9 v -3 h -6 v 3 H 4.0000005 v -3 h -6 v 3 h -6 v -3 H -14 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -9 z"
+       stroke="#000000"
+       stroke-width="0.05"
+       id="path2"
+       style="fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <rect
+       style="fill:none;stroke:#ff00ff;stroke-width:0.2;stroke-opacity:1"
+       id="rect7-3-6-7"
+       width="15"
+       height="11"
+       x="67"
+       y="-162.38876"
+       transform="scale(-1)" />
+    <rect
+       style="fill:none;stroke:#ff00ff;stroke-width:0.224012;stroke-opacity:1"
+       id="rect7-3-6-7-5"
+       width="23"
+       height="9"
+       x="44"
+       y="-165.88876"
+       transform="scale(-1)" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.199999;stroke-opacity:1"
+       id="rect8"
+       width="30"
+       height="3"
+       x="-67"
+       y="155.38876" />
+    <g
+       id="g5"
+       transform="translate(-10e-7,23.389)">
+      <path
+         d="m 28.000001,122.5 v -3 -8 -3 -3 h -3 -9 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -9 -3 v 3 3 8 3 3 h 3 9 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 9 3 z"
+         stroke="#000000"
+         stroke-width="0.05"
+         id="path1-3"
+         style="fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
+         id="rect6-5"
+         width="50"
+         height="3.5"
+         x="-12.000003"
+         y="-117.25"
+         transform="scale(-1)" />
+    </g>
+  </g>
+  <g
+     id="g8"
+     transform="translate(0,-1.6e-4)">
+    <path
+       d="m 32.85724,148.8889 v 3 8.00006 3 3 h 3.000003 9 v -3 h 6 v 3 0 15 h 18 v 0 h 6 6 6 v 0 h 6 v -15 0 -3 h 6 v 3 h 5.999997 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 9 3 v -3 -3 -8.00006 -3 -3 h -3 -9 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -5.999997 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -9 -3.000003 z"
+       stroke="#000000"
+       stroke-width="0.05"
+       id="path1"
+       style="fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
+       id="rect6"
+       width="50"
+       height="3.5"
+       x="48.857239"
+       y="154.13889" />
+    <path
+       d="m 32.85724,131.88916 v 3 7.99974 3 h 3.000003 9 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 6 v 3 h 6 v -3 h 5.999997 v -13.99974 h -5.999997 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -6 v -3 h -6 v 3 h -9 z"
+       stroke="#000000"
+       stroke-width="0.05"
+       id="path3"
+       style="fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
+       id="rect9"
+       width="23"
+       height="12"
+       x="62.357239"
+       y="165.88895" />
+    <rect
+       style="fill:none;stroke:#ff00ff;stroke-width:0.218692;stroke-opacity:1"
+       id="rect10"
+       width="27.5"
+       height="12"
+       x="60.107239"
+       y="165.88895" />
+    <circle
+       style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4"
+       cx="87.607246"
+       cy="171.88895"
+       r="0.5" />
+    <circle
+       style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4-2"
+       cx="60.107239"
+       cy="171.88895"
+       r="0.5" />
+    <rect
+       style="fill:none;stroke:#ff00ff;stroke-width:0.2;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4"
+       width="42"
+       height="18"
+       x="50.857239"
+       y="162.88893" />
+  </g>
+  <g
+     id="g7"
+     transform="translate(0,11.25013)">
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
+       id="rect7-3-7-8"
+       width="15"
+       height="13"
+       x="195.21449"
+       y="147.63889" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
+       id="rect7-3-7-6"
+       width="15"
+       height="13"
+       x="167.21449"
+       y="147.63889" />
+    <g
+       id="g6"
+       transform="translate(29.857256,27.223602)">
+      <path
+         id="rect7-3-7"
+         style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
+         d="m 133.85746,114.41505 v 6.00015 h 18.49965 v 8.99997 h 13.00024 v -8.99997 h 18.50016 v -6.00015 h -18.50016 -13.00024 z" />
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
+         id="rect11"
+         width="50.000046"
+         height="6"
+         x="133.85722"
+         y="108.41527" />
+      <circle
+         style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
+         id="path11"
+         cx="138.85724"
+         cy="111.41527"
+         r="1" />
+      <circle
+         style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
+         id="path11-6"
+         cx="178.85724"
+         cy="111.41527"
+         r="1" />
+    </g>
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
+       id="rect9-7"
+       width="23"
+       height="12"
+       x="179.21451"
+       y="120.6389" />
+    <rect
+       style="fill:none;stroke:#ff00ff;stroke-width:0.218692;stroke-opacity:1"
+       id="rect10-9"
+       width="27.5"
+       height="12"
+       x="176.96451"
+       y="120.6389" />
+    <circle
+       style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4-4"
+       cx="204.46451"
+       cy="126.6389"
+       r="0.5" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4-2"
+       width="42"
+       height="18"
+       x="167.71451"
+       y="117.63887" />
+  </g>
+  <path
+     id="rect1"
+     style="fill:none;stroke:#00ff00;stroke-width:0.2"
+     d="m 121.00395,206.29209 30,18.9949 V 276.292 h -30 z"
+     sodipodi:nodetypes="ccccc" />
+  <rect
+     style="fill:none;stroke:#00ff00;stroke-width:0.166101"
+     id="rect2"
+     width="15"
+     height="15"
+     x="75.489304"
+     y="212.71002" />
+  <circle
+     style="fill:none;stroke:#00ff00;stroke-width:0.2"
+     id="path4-3"
+     cx="82.989304"
+     cy="220.21002"
+     r="3" />
+</svg>
