@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="297mm"
-   height="420mm"
-   viewBox="0 0 297 420"
+   width="163.24545mm"
+   height="80mm"
+   viewBox="0 0 163.24545 80"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
    sodipodi:docname="roues.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,13 +23,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.0396254"
-     inkscape:cx="396.77752"
-     inkscape:cy="407.35826"
-     inkscape:window-width="2560"
-     inkscape:window-height="1369"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:zoom="0.36756309"
+     inkscape:cx="-246.21624"
+     inkscape:cy="359.12203"
+     inkscape:window-width="1920"
+     inkscape:window-height="1020"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -37,18 +37,50 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <circle
-       style="fill:none;fill-opacity:0.40413;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
-       id="path2"
-       cx="77.87661"
-       cy="231.46661"
-       r="75" />
-    <circle
-       style="fill:none;fill-opacity:0.40413;stroke:#ff0000;stroke-width:0.2;stroke-opacity:1"
-       id="path2-2"
-       cx="77.766556"
-       cy="77.638947"
-       r="75" />
+     id="layer1"
+     transform="translate(-48.034189,-170)">
+    <g
+       id="g1"
+       transform="translate(-60.465811)">
+      <circle
+         style="fill:none;fill-opacity:0.40413;stroke:#ff0000;stroke-width:0.106666;stroke-opacity:1"
+         id="path2-2"
+         cx="148.5"
+         cy="210"
+         r="40" />
+      <circle
+         style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+         id="path1"
+         cx="148.5"
+         cy="210"
+         r="3" />
+    </g>
+    <g
+       id="g2"
+       transform="translate(22.779638)">
+      <circle
+         style="fill:none;fill-opacity:0.40413;stroke:#ff0000;stroke-width:0.106666;stroke-opacity:1"
+         id="path2-2-7"
+         cx="148.5"
+         cy="210"
+         r="40" />
+      <circle
+         style="fill:none;stroke:#ff0000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-9"
+         cx="148.5"
+         cy="210"
+         r="3" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:22.5778px;line-height:0.7;font-family:Dyuthi;-inkscape-font-specification:Dyuthi;text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:none;stroke:#ff0000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+       x="90.196342"
+       y="237.78581"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2"
+         x="90.196342"
+         y="237.78581">5mm</tspan></text>
   </g>
 </svg>
