@@ -1,4 +1,4 @@
- #include <IRremote.h>
+#include <IRremote.h>
 #include <Servo.h>
 #include <Adafruit_NeoPixel.h>
 #include <Ultrasonic.h>
@@ -52,8 +52,8 @@ Servo myservo2;
 Ultrasonic ultrasonic(US_PIN);
 
 // variables "strip" pour manipuler le ruban de leds
-Adafruit_NeoPixel strip1(LED_COUNT, LED_PIN_1, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel strip2(LED_COUNT, LED_PIN_2, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel phares(LED_COUNT, LED_PIN_1, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel gyrophares(LED_COUNT, LED_PIN_2, NEO_GRB + NEO_KHZ800);
 
 void setup()
 {
@@ -63,13 +63,13 @@ void setup()
     Serial.begin(9600);
 
     // initialisation leds
-    strip1.begin();
-    strip1.show();
-    strip1.setBrightness(50);
+    phares.begin();
+    phares.show();
+    phares.setBrightness(50);
     
-    strip2.begin();
-    strip2.show();
-    strip2.setBrightness(50);
+    gyrophares.begin();
+    gyrophares.show();
+    gyrophares.setBrightness(50);
     
   
     // initialisation infra rouge
@@ -86,9 +86,11 @@ void setup()
     //////////////////// FIN INITIALISATION ////////////////////
 
 }
+//variable pour le capteur utltrason (le cpopilote)
+int copilote = 1;
 
-// Fonction "set_led_color" qui prend 4 parametres : le ruban de leds à modifier (&strip1 ou &strip2) et 3 variables numériques (entre 0 et 255) et applique cette couleur aux leds
-void set_led_color(Adafruit_NeoPixel *strip, int red, int green, int blue)
+// Fonction "set_led_color" qui prend 5 parametres : le ruban de leds à modifier (&phares ou &gyrophares) et 3 variables numériques (entre 0 et 255) et applique cette couleur aux leds, et le délai entre tous les allumages de leds
+void set_led_color(Adafruit_NeoPixel *strip, int red, int green, int blue,int delai)
 {
     // crée une varaible "color" qui contient les informations des niveau de rouge de vert et de bleu
     int32_t color = strip->Color(red, green, blue);
@@ -100,6 +102,8 @@ void set_led_color(Adafruit_NeoPixel *strip, int red, int green, int blue)
         strip->setPixelColor(i, color);
         // applilque la couleur definie
         strip->show();
+        delay (delai);
+
     }
 }
 
@@ -160,16 +164,16 @@ long capteur_ultrason()
 }
 
 void loop()
-{
+{ 
+  Serial.println(copilote);
     // si obstacle détécté
-    if (capteur_ultrason() < 10)
+    if (capteur_ultrason() < 10 && copilote == 1)
     {
-      set_led_color(&strip1, 255,0,0);
-      set_led_color(&strip2, 255,0,0);
+      set_led_color(&gyrophares, 255,0,0,0);
       arreter();
       delay(500);
-      eteindre_leds(&strip1);
-      eteindre_leds(&strip2);
+      eteindre_leds(&gyrophares);
+      
     }
 
     // sinon si quelquechose a été recu par la capteur infrarouge
@@ -198,74 +202,97 @@ void loop()
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_1)
         {
+            set_led_color(&gyrophares, 255,50,0,0);
+            set_led_color(&phares, 255,255,255,0);
             Serial.println("touche: TOUCHE_1");
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_2)
         {
-            Serial.println("touche: TOUCHE_2");
+            set_led_color(&gyrophares, 255,0,255,0);
+            set_led_color(&phares, 255,255,255,0);
+             Serial.println("touche: TOUCHE_2");
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_3)
         {
-            Serial.println("touche: TOUCHE_3");
+          set_led_color(&gyrophares, 45,30,80,50);
+          set_led_color(&phares, 255,255,255,50);
+          Serial.println("touche: TOUCHE_3");
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_4)
         {
-            Serial.println("touche: TOUCHE_4");
+          set_led_color(&gyrophares, 254,40,30,0);
+          set_led_color(&phares, 255,255,255,0);
+          Serial.println("touche: TOUCHE_4");
         
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_5)
         {
-            Serial.println("touche: TOUCHE_5");
+          set_led_color(&gyrophares, 190,90,38,0);
+          set_led_color(&phares, 255,255,255,0);
+          Serial.println("touche: TOUCHE_5");
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_6)
         {
-            Serial.println("touche: TOUCHE_6");
+          set_led_color(&gyrophares, 20,20,20,0);
+          set_led_color(&phares, 20,20,20,0);
+          Serial.println("touche: TOUCHE_6");
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_7)
         {
-            Serial.println("touche: TOUCHE_7");
-            set_led_color(&strip1, 0, 255, 0);
-            set_led_color(&strip2, 0, 255, 0);
+          Serial.println("touche: TOUCHE_7");
+          set_led_color(&phares, 255, 255, 255,0);
+          set_led_color(&gyrophares, 0, 255, 0,0);
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_8)
         {
-            Serial.println("touche: TOUCHE_8");
-            set_led_color(&strip1, 0, 0, 255);
-            set_led_color(&strip2, 0, 0, 255);
+          Serial.println("touche: TOUCHE_8");
+          set_led_color(&phares, 255, 255, 255,0);
+          set_led_color(&gyrophares, 0, 0, 255,0);
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_9)
         {
-            Serial.println("touche: TOUCHE_9");
-            set_led_color(&strip1, 255, 0, 255);
-            set_led_color(&strip2, 255, 0, 255);
+          set_led_color(&phares, 255, 255, 255,0);
+          set_led_color(&gyrophares, 255, 255, 255,0);
+          Serial.println("touche: TOUCHE_ETOILE");
 
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_0)
         {
-            Serial.println("touche: TOUCHE_0");
-            arreter();
+          Serial.println("touche: TOUCHE_0");
+          eteindre_leds(&phares);
+          eteindre_leds(&gyrophares);
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_ETOILE)
         {
-            Serial.println("touche: TOUCHE_ETOILE");
-            arreter();
-            eteindre_leds(&strip1);
-            eteindre_leds(&strip2);
-        }
-        else if (IrReceiver.decodedIRData.command == TOUCHE_DIESE)
-        {
-            Serial.println("touche: TOUCHE_DIESE");
+          copilote = 1;
         }
         else if (IrReceiver.decodedIRData.command == TOUCHE_OK)
         {
-            Serial.println("touche: TOUCHE_OK");
+          arreter();
+          eteindre_leds(&phares);
+          eteindre_leds(&gyrophares);
+          Serial.println("touche: TOUCHE_OK");
         }
         IrReceiver.resume();
+    }
+    if (IrReceiver.decode() && IrReceiver.decodedIRData.command == TOUCHE_DIESE)        //déactivateur du copilote (le copilote arrête le robot si il y a un obstacle)
+    {
+        if (copilote == 1)
+        {
+          copilote = 0;
+        }                       //les lignes peuvent être utiliser si l'on veut utiliser un seul bouton de la télécomande pour le copilote.
+        //else if (copilote == 0)
+        //{
+        //  copilote = 1;
+        //}
+        delay (500);
+        Serial.println("touche: TOUCHE_DIESE");
+        Serial.println(copilote);
     }
 }
